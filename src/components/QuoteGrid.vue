@@ -2,7 +2,7 @@
   <div class="row">
 
     <!-- Native modifier allows us to interact with components on the template -->
-    <app-quote v-for="quote in quotes" @click.native="deleteQuote(index)">{{ quote }}</app-quote>
+    <app-quote v-for="(quote, index) in quotes" @click.native="deleteQuote(index)">{{ quote }}</app-quote>
 
   </div>
 </template>
